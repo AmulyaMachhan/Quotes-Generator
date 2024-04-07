@@ -1,29 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
 body {
     background-size: cover;
     color: white;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Cinzel Decorative';
     background-color: rgb(95,207,128);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 3rem;
+    font-weight: 800;
   }
   #quote-box {
-    position: absolute;
-    top: 14%;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-    line-height: .5;
+    height: 300px;
   }
   .quote {
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 900;
     line-height: 1.1;
     text-shadow: 0 1px 1px rgba(0,0,0, .8);
-    position: relative;
     margin: 0;
     } 
   .quote:before, .quote:after {
-    font-size: 6rem;
+    font-size: 2rem;
     line-height: 2.5rem;
-    position: absolute;
   }
   .quote:before {
     content: "“";
@@ -32,12 +39,11 @@ body {
   }
   .quote:after {
     content: "”";
-    bottom: -.1em;
     margin-left: .1em;
-    position: absolute;
   }
   .source {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     letter-spacing: 0.05em;
     line-height: 1.1;
     text-align: right;
@@ -47,7 +53,8 @@ body {
     content: "—";
   }
   .citation {
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 200;
     font-style: italic;
   }
   .citation:before {
@@ -61,10 +68,8 @@ body {
   
   #loadQuote {
     font-size: 2.5rem;;
-    position: fixed;
     width: 7em;
     display: inline-block;
-    left: 50%;
     margin-left: -6em;
     bottom: 150px;
     border-radius: 4px;
@@ -74,21 +79,104 @@ body {
     padding: 15px 0;
     transition: .5s ;
   }
-  #loadQuote:hover {
-    background-color: rgba(255,255,255,.25);
+  .main {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    box-shadow: 10px rgb(17, 17, 17);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
   }
+  
+  #quote-box {
+    margin: 0 auto;
+  }
+  
+  .quote {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .8);
+  }
+  
+  .quote:before,
+  .quote:after {
+    font-size: 2rem;
+    line-height: 1.5rem;
+  }
+  
+  .quote:before {
+    content: "“";
+    top: .25em;
+    left: -.5em;
+  }
+  
+  .quote:after {
+    content: "”";
+    margin-left: .1em;
+  }
+  
+  .source {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+  }
+  
+  .source:before {
+    content: "—";
+  }
+  
+  .citation {
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .citation:before {
+    content: ", ";
+    font-style: normal;
+  }
+  
+  .year:before {
+    content: ", ";
+    font-style: normal;
+  }
+  
+  #loadQuote {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 15em;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px 0;
+    transition:all 1.2s smooth;
+  }
+  
+  #loadQuote:hover {
+    background-color: rgba(255, 255, 255, .25);
+  }
+  
   #loadQuote:focus {
     outline: none;
   }
   
-  @media (max-width: 420px) {
-    .quote {
-      font-size: 2.5rem;
+  @media (max-width: 768px) {
+    .main{
+      max-width: 500px;
     }
-    .quote:before, .quote:after {
-      font-size: 3rem;
+    .quote {
+      font-size: 1.5rem;
     }
     .source {
       font-size: 1rem;
+    }
+    #loadQuote{
+      width: 20rem;
     }
   }
