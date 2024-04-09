@@ -4,15 +4,14 @@ Welcome to the Glassmorphic Quotes Generator website! This web application provi
 
 You can view this site [here](https://amulyamachhan.github.io/Quotes-Generator/)
 
+## Screenshots
+![qoutes_generator](https://github.com/AmulyaMachhan/Quotes-Generator/assets/111338400/08d7a049-3b76-4300-bc9d-0eac5eb5fdf6)
+
 ## Features
 
 - **Automatic Quote Refresh:** Enjoy a continuous stream of inspirational quotes that change every five seconds.
 - **Manual Quote Generation:** Click on a button to instantly generate a new quote, offering users control over the quote selection.
 - **Glassmorphism Effect:** The website design incorporates the trendy glassmorphism effect, enhancing the visual appeal and modernity of the interface.
-
-## Screenshots
-
-![quotes-generator](https://github.com/AmulyaMachhan/Quotes-Generator/assets/111338400/49b6fd89-b9ee-480d-b2a9-40038468070f)
 
 ## Technologies Used
 
